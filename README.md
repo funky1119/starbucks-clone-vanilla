@@ -85,3 +85,34 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 이 메타 정보를 통해 페이스북이나 카카오톡 등 다양한 플랫폼에서 URL을 공유할 때 해당 페이지의 미리보기로 표시될 정보를 제공할 수 있고, 사용자는 URL로 접속하기 전에 해당 페이지의 기본 정보를 미리 확인할 수 있습니다.
 대부분의 플랫폼 검색 엔진은 공유된 URL의 페이지 전체 로딩을 기다리지 않고 빠르게 메타 정보만 읽어서 해당 페이지를 파악하므로, 오픈그래프나 트위터 카드 같은 메타 정보를 잘 제공해야 검색 엔진 최적화(SEO)에도 도움이 됩니다.
 그래서 SPA(Single Page Application) 같은 단일 HTML 제공 사이트는 페이지 구조에 따라 이러한 메타 정보를 위해 별도의 컴퓨팅 서버가 필요할 수 있습니다.
+
+&nbsp;
+
+# GIT 명령어
+
+## 기본 명령어
+
+1. git --version (git 버전 확인 방법)
+2. git init (git 저장소 초기화)
+3. git status (git 상태 확인)
+4. git add . (git 저장소 생성)
+5. git commit -m "커밋 메시지" (git 커밋 생성)
+6. git push (git 원격 저장소에 업로드)
+7. git pull (git 원격 저장소에서 업데이트 된 코드 다운로드)
+8. git clone (git 원격 저장소에서 코드 복제)
+
+## 새로운 프로젝트 Push
+
+1.  git init
+2.  git config --global core.autocrlf input (mac은 input, windows는 true 라고 작성)
+
+    ( **커밋 시**: Windows 스타일의 CRLF(Carriage Return + Line Feed)를 Unix 스타일의 LF(Line Feed)로 변환합니다.)
+
+3.  git config --global user.name "사용자 이름" (깃 사용자 정보 이름 설정)
+4.  git config --global user.email "사용자 이메일" (깃 사용자 정보 이메일 설정)
+5.  git config --global --list (깃 사용자 정보 확인)
+6.  git add . (모든 파일 추가)
+7.  git commit -m "커밋 메시지" (깃 커밋 생성)
+8.  git log (깃 커밋 로그 확인)
+9.  git remote add origin [주소] (깃 원격 저장소 주소 추가)
+10. git push origin master (깃 원격 저장소에 업로드)
