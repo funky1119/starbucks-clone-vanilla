@@ -131,3 +131,12 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 8.  git log (깃 커밋 로그 확인)
 9.  git remote add origin [주소] (깃 원격 저장소 주소 추가)
 10. git push origin master (깃 원격 저장소에 업로드)
+
+## Branch 명령어
+
+1. git branch (브랜치 목록 확인)
+2. git branch -a (모든 브랜치 목록 확인)
+3. git branch [브랜치 이름] (새로운 브랜치 생성)
+4. git checkout [브랜치 이름] (브랜치 이동)
+5. git merge [브랜치 이름] (브랜치 병합)
+6. git branch -d [브랜치 이름] (브랜치 삭제)
