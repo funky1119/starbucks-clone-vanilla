@@ -6,17 +6,11 @@ https://priceless-bhabha-83fc0d.netlify.app/
 ## CDN
 
 - reset-css
-
 - GOOGLE FONT
-
 - MATERIAL ICONS
-
 - LODASH
-
 - GSAP & SCROLL TO PLUGIN
-
 - SWIPER
-
 - SCROLL MASIC
 
 `-----------------------------------------------------------`
@@ -93,24 +87,45 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 ## 기본 명령어
 
 1. git --version (git 버전 확인 방법)
-2. git init (git 저장소 초기화)
+2. git init (현재 프로젝트에서 변경사항 추적(버전 관리)을 시작)
 3. git status (git 상태 확인)
-4. git add . (git 저장소 생성)
-5. git commit -m "커밋 메시지" (git 커밋 생성)
-6. git push (git 원격 저장소에 업로드)
+4. git add . (모든 파일의 변경사항을 추적하도록 지정)
+5. git commit -m "커밋 메시지" (메세지(-m)와 함께 버전을 생성)
+6. git push origin master (origin이랑 별칭의 원격 저장소로 버전 내역 전송)
 7. git pull (git 원격 저장소에서 업데이트 된 코드 다운로드)
-8. git clone (git 원격 저장소에서 코드 복제)
+8. git clone [주소](git 원격 저장소에서 코드 복제)
+9. git remote add orgint [주소] (origin이랑 별칭으로 원격 저장소를 연결)
+
+## 개행 문자(New line) 설정
+
+### macOS
+
+- $git config --global core.autocrlf input
+
+### windows
+
+- $git config --global core.autocrlf true
+
+## 사용자 정보
+
+### 커밋(버전 생성)을 위한 정보 등록
+
+- $git config --global user.name "사용자 이름"
+- $git config --global user.email "사용자 이메일"
+
+## 구성 확인
+
+### Q키를 눌러서 종료!
+
+- $git config --global --list
 
 ## 새로운 프로젝트 Push
 
 1.  git init
-2.  git config --global core.autocrlf input (mac은 input, windows는 true 라고 작성)
-
-    ( **커밋 시**: Windows 스타일의 CRLF(Carriage Return + Line Feed)를 Unix 스타일의 LF(Line Feed)로 변환합니다.)
-
-3.  git config --global user.name "사용자 이름" (깃 사용자 정보 이름 설정)
-4.  git config --global user.email "사용자 이메일" (깃 사용자 정보 이메일 설정)
-5.  git config --global --list (깃 사용자 정보 확인)
+2.  git config --global core.autocrlf input
+3.  git config --global user.name "사용자 이름"
+4.  git config --global user.email "사용자 이메일"
+5.  git config --global --list
 6.  git add . (모든 파일 추가)
 7.  git commit -m "커밋 메시지" (깃 커밋 생성)
 8.  git log (깃 커밋 로그 확인)
