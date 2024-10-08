@@ -95,6 +95,9 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 7. git pull (git 원격 저장소에서 업데이트 된 코드 다운로드)
 8. git clone [주소](git 원격 저장소에서 코드 복제)
 9. git remote add orgint [주소] (origin이랑 별칭으로 원격 저장소를 연결)
+10. git reset --hard HEAD~1 (최신 커밋 하나를 취소하고 되돌아가기)
+11. git reset --hard ORIG_HEAD (커밋 취소 된 상태에서 다시 복구 시킬 때)
+12. git branch -m master main (마스터 브랜치 이름을 main으로 변경)
 
 ## 개행 문자(New line) 설정
 
@@ -122,15 +125,16 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 ## 새로운 프로젝트 Push
 
 1.  git init
-2.  git config --global core.autocrlf input
-3.  git config --global user.name "사용자 이름"
-4.  git config --global user.email "사용자 이메일"
-5.  git config --global --list
-6.  git add . (모든 파일 추가)
-7.  git commit -m "커밋 메시지" (깃 커밋 생성)
-8.  git log (깃 커밋 로그 확인)
-9.  git remote add origin [주소] (깃 원격 저장소 주소 추가)
-10. git push origin master (깃 원격 저장소에 업로드)
+2.  git config --global init.defaultBranch main (마스터 브랜치 이름을 main으로 변경)
+3.  git config --global core.autocrlf input
+4.  git config --global user.name "사용자 이름"
+5.  git config --global user.email "사용자 이메일"
+6.  git config --global --list
+7.  git add . (모든 파일 추가)
+8.  git commit -m "커밋 메시지" (깃 커밋 생성)
+9.  git log (깃 커밋 로그 확인)
+10. git remote add origin [주소] (깃 원격 저장소 주소 추가)
+11. git push origin master (깃 원격 저장소에 업로드)
 
 ## Branch 명령어
 
