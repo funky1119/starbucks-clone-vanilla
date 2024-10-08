@@ -144,3 +144,14 @@ CSS 선택자 우선순위는 하나의 요소에 여러 스타일이 적용될 
 4. git checkout [브랜치 이름] (브랜치 이동)
 5. git merge [브랜치 이름] (브랜치 병합)
 6. git branch -d [브랜치 이름] (브랜치 삭제)
+
+## GIT 버전 관리하지 않을 폴더 및 파일 설정
+
+- .gitignore 로 설정
+
+```
+  .idea
+  .vscode
+  .node_modules
+  .DS_Store
+```
